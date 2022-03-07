@@ -31,36 +31,42 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "onStart");
+        Toast.makeText(this, "onStart()", Toast.LENGTH_LONG).show();
         resetUI();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Toast.makeText(this, "onResume()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Toast.makeText(this, "onPause()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        Toast.makeText(this, "onStop()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onStop");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+        Toast.makeText(this, "onRestart()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onRestart");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Toast.makeText(this, "onDestroy()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onDestroy");
     }
 
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("count", count);
+        Toast.makeText(this, "onSaveInstanceState()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onSaveInstanceState");
     }
 
@@ -83,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void resetUI() {
         ((TextView) findViewById(R.id.txt_counter)).setText("count");
+        Toast.makeText(this, "resetUI()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "resetUI");
     }
 
