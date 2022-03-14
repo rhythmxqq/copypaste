@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main);
         Log.d(TAG, "onCreate");
         Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
-        Log.d(TAG, "onCreate");
+       
     }
 
     @Override
